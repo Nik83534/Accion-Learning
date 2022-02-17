@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>indext</title>
+    <script>
+        function validate(){
+            var name=document.getElementById('name').value;
+            var password=document.getElementById('pass').value;
+
+            if(name=='raj' && password=='accion'){
+                document.getElementById('re').innerHTML = "Welcome To AccionLabs";
+            }
+            else{
+                document.getElementById('re').innerHTML = "Incorrect Username or Password";
+            }
+        }
+
+    </script>
+</head>
+<body>
+   <label> Username: </label> <input type="text" id="name"></input><br><br>
+   <label> Password: </label> <input type="text" id="pass"></input><br><br>
+   <button onclick="validate()"> Apply </button>
+   <p style="text-align: center; color:rgb(47, 110, 84); font-size: large;"><span id="re"></span></p>
+</body>
+</html>
